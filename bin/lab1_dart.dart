@@ -2,8 +2,8 @@ String greet(String name) {
   return 'Привет, $name!';
 }
 void main() {
-  print(greet('Артем'))
-  print(greet('Мария'))
+  print(greet('Артем'));
+  print(greet('Мария'));
   String name = 'Артем';
   int age = 20;
   double height = 1.75;
@@ -13,7 +13,7 @@ void main() {
   print(age);
   print(height);
   print(isStudent);
-  
+
   print('привет, $name! Тебе $age лет.');
   print('Через 5 лет тебе будет ${age + 5} лет.');
   print('Рост: ${height} м, студент: $isStudent');
