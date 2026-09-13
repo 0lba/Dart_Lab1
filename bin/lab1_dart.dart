@@ -1,9 +1,19 @@
 String greet(String name) {
   return 'Привет, $name!';
 }
+String repeat(String text, [int times = 2]){
+  String result = '';
+  for (int i = 0; i < times; i++){
+    result += text;
+  }
+  return result;
+}
 void main() {
   print(greet('Артем'));
   print(greet('Мария'));
+  print(repeat('1'));
+  print(repeat('123', 2));
+  print(repeat('a', 1));
   String name = 'Артем';
   int age = 20;
   double height = 1.75;
@@ -44,4 +54,9 @@ void main() {
   for (var fruit in fruits2){
     print(fruit);
   }
+  List<String> names = ['Артем', 'Мария', 'Иван'];
+  List<String> upper = names.map((name) => name.toUpperCase()).toList();
+  print(upper);
+  List<String> longNames = names.where((name) => name.length > 4).toList();
+  print(longNames);
 }
